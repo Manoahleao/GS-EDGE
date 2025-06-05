@@ -10,7 +10,6 @@ Em muitas regiões urbanas e ribeirinhas, chuvas intensas e rápidas elevações
 
 Desenvolver um sistema físico com Arduino capaz de:
 - Monitorar o nível da água em tempo real
-- Detectar condições de risco (chuva, umidade, enchente)
 - Emitir alertas visuais (LEDs), sonoros (buzzer) e informativos (LCD)
 - Ajudar comunidades vulneráveis a se prepararem com antecedência para possíveis inundações
 
@@ -19,7 +18,6 @@ Desenvolver um sistema físico com Arduino capaz de:
 ## ⚙️ Componentes Utilizados
 
 - Arduino Uno
-- Sensor de temperatura e umidade DHT22
 - Sensor ultrassônico HC-SR04 (nível da água)
 - Display LCD 16x2 (sem I2C)
 - LEDs: verde, laranja e vermelho
@@ -30,13 +28,13 @@ Desenvolver um sistema físico com Arduino capaz de:
 
 ## 🔁 Lógica de Funcionamento
 
-1. O sensor **DHT22** monitora a temperatura e umidade.
-2. O sensor **HC-SR04** mede a distância da água até o sensor, calculando o **nível de água em %**.
-3. De acordo com o nível:
+
+1. O sensor **HC-SR04** mede a distância da água até o sensor, calculando o **nível de água em %**.
+2. De acordo com o nível:
    - **Verde**: Nível seguro
    - **Laranja**: Alerta de atenção
    - **Vermelho + buzzer**: Alerta crítico (risco de enchente)
-4. As informações também são exibidas no **LCD**, incluindo temperatura, umidade e nível da água.
+4. As informações do nível da água também são exibidas no LCD
 
 ---
 
@@ -59,7 +57,7 @@ Você pode testar o funcionamento completo no Wokwi (sem precisar instalar nada)
 
 1. Acesse o link do Wokwi
 2. Clique em **"Start Simulation"**
-3. Interaja com os sensores:
+3. Interaja com o sensor:
    - HC-SR04: Mude a posição do nível da água
 
 ---
@@ -69,15 +67,14 @@ Você pode testar o funcionamento completo no Wokwi (sem precisar instalar nada)
 - Manipulação de sensores analógicos e digitais
 - Controle de atuadores (LEDs, buzzer, LCD)
 - Condições lógicas com `if/else`
-- Mapeamento de valores com `map()`
 - Exibição de dados no LCD
-- Serial Monitor para debug
+
 
 ---
 
 
 
-**Nome:** Manoah Leão e Caio Nascimento
+**Nomes:** Manoah Leão e Caio Nascimento
 **RM** 563713 e 
 
 ---
