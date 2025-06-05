@@ -45,8 +45,7 @@ Desenvolver um sistema físico com Arduino capaz de:
 Você pode testar o funcionamento completo no Wokwi (sem precisar instalar nada).
 
 🔗 **Link para simulação Wokwi:**  
-👉 [Acesse aqui](https://wokwi.com/projects/414153248637261825)
-
+👉 [Acesse aqui] (https://wokwi.com/projects/432948051224198145)
 ---
 
 ## 📽️ Vídeo Demonstrativo
