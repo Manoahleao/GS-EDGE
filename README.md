@@ -60,8 +60,7 @@ Você pode testar o funcionamento completo no Wokwi (sem precisar instalar nada)
 1. Acesse o link do Wokwi
 2. Clique em **"Start Simulation"**
 3. Interaja com os sensores:
-   - DHT22: Altere a temperatura/umidade
-   - HC-SR04: Mude a posição do obstáculo para simular aumento da água
+   - HC-SR04: Mude a posição do nível da água
 
 ---
 
@@ -75,13 +74,6 @@ Você pode testar o funcionamento completo no Wokwi (sem precisar instalar nada)
 - Serial Monitor para debug
 
 ---
-
-## 📁 Código Fonte
-
-O código está em `flood_alert.ino`,
-
----
-
 
 
 
