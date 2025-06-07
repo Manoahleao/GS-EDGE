@@ -179,6 +179,100 @@ Serial.print("Distancia calculada (cm): ");
 Serial.println(distanciaCm);
 
 }
+---
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 29.4, "left": -125.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -80.4,
+      "left": -140.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -80.4,
+      "left": -44.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -80.4,
+      "left": -92.2,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -151.2,
+      "left": 11.4,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -152.1, "left": 120.7, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 112,
+      "left": 303.2,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -5.65,
+      "left": -163.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -5.65,
+      "left": -57.6,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -15.25,
+      "left": 48,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "led1:C", "r1:1", "green", [ "v38.4", "h10" ] ],
+    [ "led3:C", "r2:1", "green", [ "v38.4", "h19.6" ] ],
+    [ "led2:C", "r3:1", "green", [ "v0" ] ],
+    [ "led2:A", "uno:GND.1", "green", [ "v0" ] ],
+    [ "led3:A", "uno:GND.1", "green", [ "v0" ] ],
+    [ "led1:A", "uno:GND.1", "green", [ "v0" ] ],
+    [ "bz1:2", "uno:5", "green", [ "v0" ] ],
+    [ "r1:2", "uno:GND.2", "green", [ "v0" ] ],
+    [ "r2:2", "uno:GND.2", "green", [ "v0" ] ],
+    [ "r3:2", "uno:GND.2", "green", [ "v249.6", "h-68.4" ] ],
+    [ "bz1:1", "uno:GND.2", "green", [ "v0" ] ],
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v326.4", "h-153.6", "v-19.2" ] ],
+    [ "ultrasonic1:GND", "uno:GND.3", "black", [ "v336", "h-1.2" ] ],
+    [ "ultrasonic1:TRIG", "uno:9", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "uno:10", "green", [ "v0" ] ],
+    [ "lcd1:GND", "uno:GND.3", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
+---
+# Wokwi Library List
+# See https://docs.wokwi.com/guides/libraries
+
+# Automatically added based on includes:
+LiquidCrystal I2C
 
 ---
 
